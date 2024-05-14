@@ -17,7 +17,11 @@ export const EachMnemonic = ({ mnemonic }) => {
       <p className="flex-grow">{mnemonic}</p>
 
       {copied ? (
-        <FaCheck className="ml-3" />
+        <button
+          disabled
+          className="ml-3">
+          <FaCheck />
+        </button>
       ) : (
         <button
           onClick={() => {
